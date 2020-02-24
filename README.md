@@ -1,7 +1,6 @@
 # frontend-rdfa-editor-demo
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This ember application is a demonstration of how the rdfa-editor can be integrated in a frontend and how it can be used.
 
 ## Prerequisites
 
@@ -14,7 +13,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:lblod/frontend-rdfa-editor-demo.git`
 * `cd frontend-rdfa-editor-demo`
 * `npm install`
 
@@ -38,15 +37,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `npm run lint:hbs`
 * `npm run lint:js`
 * `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
