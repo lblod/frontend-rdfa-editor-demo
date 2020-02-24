@@ -22,6 +22,7 @@
     "@glimmer/component": "^1.0.0",
     "@lblod/ember-rdfa-editor": "^0.34.3",
     "@lblod/ember-rdfa-editor-plugin-system-dispatcher": "^0.5.8",
+    "@lblod/ember-rdfa-editor-standard-template-plugin": "^0.7.3",
     "@lblod/ember-vo-webuniversum": "^0.22.7",
     "babel-eslint": "^10.0.3",
     "broccoli-asset-rev": "^3.0.0",
