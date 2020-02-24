@@ -1,0 +1,16 @@
+<div class="alert__icon" aria-hidden="true"></div>
+<div class="alert__content">
+  <div class="alert__title">{{title}}</div>
+  <div class="alert__message">
+    {{#if hasBlock}}
+      {{yield}}
+    {{else}}
+      {{message}}
+    {{/if}}
+  </div>
+  {{#if button}}
+    <div class="alert__actions">
+      <a class="button" {{action onClick}}>{{button}}</a>
+    </div>
+  {{/if}}
+</div>

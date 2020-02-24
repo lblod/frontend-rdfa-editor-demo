@@ -1,0 +1,40 @@
+/* ==========================================================================
+  info tile
+  Style the info tile here.
+ ========================================================================== */
+
+/* icon positioning
+ ========================================================================== */
+
+.info-tile--center .info-tile__header__icon:not(.badge) {
+	margin-bottom: 1rem;
+
+	i {
+		font-size: 3rem;
+	}
+}
+
+.info-tile:not(.info-tile--alt):not(.info-tile--clickable) {
+	background-color: $white;
+}
+
+/* for drawer */
+
+.info-tile.toggle--arrow-down:before {
+	content: normal;
+}
+
+.info-tile.toggle--arrow-down:hover {
+	background-color: $blue-gray-lightest;
+	transition: all 200ms;
+}
+
+
+/* make sure buttons don't overflow when in info-tiles */
+
+.info-tile__footer .button.button--block {
+  padding: 0 0.5rem;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}

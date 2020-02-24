@@ -1,0 +1,13 @@
+/* ==========================================================================
+  datepicker
+  Style the datepicker here.
+ ========================================================================== */
+
+div[class^="col--"] > .date-range__datepicker {
+	width: 100%;
+	display: block;
+}
+
+.pika-single {
+	z-index: 1011;
+}

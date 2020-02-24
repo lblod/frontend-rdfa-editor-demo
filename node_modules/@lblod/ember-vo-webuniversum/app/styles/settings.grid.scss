@@ -1,0 +1,59 @@
+/* ==========================================================================
+  Style the layout of the grid here
+ ========================================================================== */
+
+.grid > * {
+    transition: all 200ms;
+}
+
+.grid--align-right {
+  -webkit-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+}
+
+/* Equal height
+ ========================================================================== */
+
+.grid.grid--equal-height {
+
+    > [class^="col--"] {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        .grid--equal-height__item {
+            flex: 1;
+        }
+    }
+}
+
+
+/* Collapse
+ ========================================================================== */
+
+.grid.grid--collapse {
+  margin: 0 !important;
+
+  > * {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// TODO: rearrange
+
+.grid div[class^="col--"].js-drawer-bound,
+.grid.grid--equal-height div[class^="col--"].js-drawer-bound {
+	display: none;
+}
+
+.grid div[class^="col--"].js-drawer-bound.js-drawer--visible,
+.grid.grid--equal-height div[class^="col--"].js-drawer-bound.js-drawer--visible {
+	display: block;
+
+	.drawer {
+		display: block;
+	    margin-top: 2.5rem;
+	}
+}

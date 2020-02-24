@@ -1,0 +1,1 @@
+export { default } from '@lblod/ember-vo-webuniversum/components/contact-card-content-email';

@@ -1,0 +1,24 @@
+/* ==========================================================================
+  drilldown
+  Style the drilldown here.
+ ========================================================================== */
+
+/* Sidebar drilldowns
+ ========================================================================== */
+
+.sidebar .drilldown__column,
+.sidebar .drilldown__subcolumn {
+	width: 100%;
+	border: none;
+}
+
+.sidebar .drilldown__subcolumn__title {
+	padding-bottom: 0.8rem;
+}
+
+/* Drilldown items
+ ========================================================================== */
+
+.drilldown__item__cta.drilldown__item__cta--end:before {
+	content: normal;
+}

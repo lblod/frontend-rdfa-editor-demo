@@ -1,0 +1,41 @@
+/* ==========================================================================
+  Alerts
+  Style annotations here
+ ========================================================================== */
+
+.alert--cta.alert--warning {
+	border-top-color: $orange;
+}
+
+/* Small
+ ========================================================================== */
+
+.alert.alert--small {
+	padding: 1rem;
+
+	p {
+		font-size: 1.4rem;
+	}
+}
+
+/* Tiny
+ ========================================================================== */
+
+.alert.alert--tiny {
+	padding: 1rem;
+
+	p {
+		font-size: 1.4rem;
+	}
+
+	.alert__icon {
+		width: 2.5rem;
+		height: 2.5rem;
+		margin-right: 1.5rem;
+
+		&:before {
+			font-size: 1rem;
+			top: -0.8rem;
+		}
+	}
+}

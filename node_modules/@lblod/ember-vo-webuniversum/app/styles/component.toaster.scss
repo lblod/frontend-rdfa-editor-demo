@@ -1,0 +1,36 @@
+// /* ==========================================================================
+//   toasters
+//   Define alternative toasters here.
+//  ========================================================================== */
+
+.toaster {
+	position: absolute;
+	right: 2rem;
+	top: 2rem;
+	z-index: 801;
+	max-width: 42rem;
+	max-height: 10rem;
+	overflow: hidden;
+	opacity: 1;
+	transition: all linear 300ms;
+
+	+ .toaster {
+		top: 12rem;
+
+		+ .toaster {
+			top: 22rem;
+
+			+ .toaster {
+				top: 32rem;
+			}
+		}
+	}
+
+	&.u-hidden {
+		position: absolute !important;
+		display: block !important;
+		right: -42rem;
+		opacity: 0;
+		transition: all 300ms;
+	}
+}

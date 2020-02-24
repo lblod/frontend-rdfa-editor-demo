@@ -1,0 +1,5 @@
+{{#if hasBlock}}
+  {{yield}}
+{{else}}
+  {{#if icon}}{{wu-icon icon class=(if isLink "vi-u-link")}}{{/if}}{{label}}
+{{/if}}

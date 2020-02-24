@@ -1,0 +1,14 @@
+{{#if hasBlock}}
+  <div class="info-tile__badge__wrapper">
+    {{yield}}
+  </div>
+{{/if}}
+{{#if icon}}
+  {{wu-icon icon class="info-tile__header__icon"}}
+{{/if}}
+{{#if hasTitle}}
+  <div class="info-tile__header__wrapper">
+    <h3 class="info-tile__header__title">{{title}}</h3>
+    <p class="info-tile__header__subtitle">{{subtitle}}</p>
+  </div>
+{{/if}}

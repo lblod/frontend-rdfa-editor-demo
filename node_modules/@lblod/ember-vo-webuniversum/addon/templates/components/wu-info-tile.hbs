@@ -1,0 +1,9 @@
+{{#if hasBlock}}
+  {{yield (hash
+      header=(component 'wu-info-tile-header')
+      content=(component 'wu-info-tile-content')
+      footer=(component 'wu-info-tile-footer')
+      )}}
+{{else}}
+  {{component 'wu-info-tile-header' title=title subtitle=subtitle}}
+{{/if}}

@@ -1,0 +1,86 @@
+/* ==========================================================================
+  tabs
+  Redefine tabs here.
+ ========================================================================== */
+
+/* Other sizes
+ ========================================================================== */
+
+.tabs__wrapper.tabs__wrapper--small {
+	margin-bottom: 0;
+
+	.tab__link {
+		font-weight: 400;
+		padding: 0 1rem 0.8rem 1rem;
+		font-size: 1.5rem;
+	}
+
+	.tab:not(:first-child) .tab__link:after {
+		top: 0.3rem;
+	}
+}
+
+.tab.tab--right {
+	position: absolute;
+	right: 0;
+	display: block;
+	bottom: 0;
+	top: auto;
+
+	&:last-child .tab__link:after {
+		content: normal;
+	}
+}
+
+/* fix for tabs on mobile */
+
+.tabs__wrapper.tabs__wrapper--small-space {
+	left: 0 !important;
+	padding: 0;
+
+	ul.tabs {
+		width: 100%;
+		left: 0;
+	}
+
+	button.tabs__toggle {
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+
+	button.tabs__toggle[data-close="true"] {
+		left: auto;
+		width: 5rem;
+	}
+
+	@include for-tablet-portrait-up {
+		padding: 0;
+	}
+}
+
+
+
+/* sub tab actions */
+
+.functional-header__sub__actions {
+  padding: 1rem 0 1rem 1.2rem;
+  background-color: $blue-gray-lightest;
+}
+
+.functional-header__sub__actions a,
+.functional-header__sub__actions li,
+.functional-header__sub__actions i.vi {
+ font-size: 1.4rem;
+}
+
+.functional-header__sub__action+.functional-header__sub__action:before {
+  content: "\E003";
+  font-family: vlaanderen_iconfont!important;
+  background-color: transparent;
+  width: auto;
+  color: $blue-gray;
+  margin-right: 1rem;
+  top: 0.2rem;
+  position: relative;
+}

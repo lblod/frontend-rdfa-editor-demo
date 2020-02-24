@@ -1,0 +1,35 @@
+/* ==========================================================================
+  drawer
+  Style the drawer here.
+ ========================================================================== */
+
+/* toggle icon mixed with info tiles
+ ========================================================================== */
+
+.js-drawer-active-item .link--icon.link--icon--caret:before {
+	transform: rotate(90deg);
+}
+
+.drawer.drawer--white {
+	background-color: $white;
+	border: 1px solid $blue-gray-light;
+	border-top: 1px solid $blue-gray-light;
+
+	.js-drawer__tip {
+		border-bottom-color: $blue-gray-light;
+		z-index: 2;
+
+		&:after {
+			content:"";
+			outline: 0;
+			position: absolute;
+			left: calc(50% - 1px);
+			top: 1px;
+			margin-left: -2.5rem;
+			border: 0 solid transparent;
+			border-width: 0 2.6rem 2.6rem;
+			border-bottom-color: $white;
+			z-index: 1;
+		}
+	}
+}

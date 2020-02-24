@@ -1,0 +1,9 @@
+{{#if hasIcon}}
+  {{wu-icon icon class="badge__icon"}}
+{{else if hasInitials}}
+  <span>{{initials}}</span>
+{{else if hasBlock}}
+  {{yield}}
+{{else}}
+  {{label}}
+{{/if}}
