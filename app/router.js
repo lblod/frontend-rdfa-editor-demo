@@ -10,4 +10,7 @@ Router.map(function() {
   this.route('route-not-found', {
     path: '/*wildcard'
   });
+  this.route('editor', function() {
+    this.route('edit', { path: '/:id/edit' });
+  });
 });
