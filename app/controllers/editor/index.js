@@ -11,7 +11,7 @@ export default class EditorIndexController extends Controller {
   async saveNewDocument() {
     let newEditorDocument = this.store.createRecord('editor-document', {
       title: 'New document',
-      content: this.editor.rootNode.innerHTML,
+      content: this.editor.htmlContent,
       createdOn: new Date(),
       modifiedOn: new Date()
     });

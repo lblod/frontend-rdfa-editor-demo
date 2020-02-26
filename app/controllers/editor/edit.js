@@ -11,8 +11,9 @@ export default class EditorEditController extends Controller {
   async save() {
     let editorDocument = this.model;
     editorDocument.set('modifiedOn', new Date());
-    editorDocument.set('content', this.editor.rootNode.innerHTML);
+    editorDocument.set('content', this.editor.htmlContent);
+
+    this.editor.setHtmlContent(editorDocument.content);
     await editorDocument.save();
-    this.set('editorDocument', editorDocument);
   }
 }
