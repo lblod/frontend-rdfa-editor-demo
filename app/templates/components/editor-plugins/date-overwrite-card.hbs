@@ -1,0 +1,94 @@
+<div class="modal-dialog__header">
+  <div class="grid">
+    <div class="col--10-12">
+      <p class="u-spacer--tiny">
+        {{#if isDateTime}}
+          Change date and time <br>
+          current date <strong>{{info.plainValue}}</strong>
+        {{else}}
+          Change the date <br>
+          current date <strong>{{info.plainValue}}</strong>
+        {{/if}}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-dialog__content">
+  {{#if isDateTime}}
+    <form class="form">
+      <div class="form__row">
+        <label>Day</label>
+        {{wu-datepicker
+            placeholder=placeholder
+            class="date-range__datepicker datepicker"
+            value=updatedDate
+            dateFormat=dateFormat
+        }}
+      </div>
+
+      <div class="form__row">
+        <div class="double-input js-double-input">
+          <div class="double-input__inputs">
+            <div class="double-input__input">
+              <label>
+                Hour
+                {{input
+                    class="input-field input-field--block"
+                    placeholder="19"
+                    data-double-input-label-highlight="1"
+                    type="number"
+                    value=hours
+                    min=0
+                    max=23
+                }}
+              </label>
+            </div>
+            <div class="double-input__input">
+              <label>
+                Minutes
+                {{input
+                    class="input-field input-field--block"
+                    placeholder="00"
+                    data-double-input-label-highlight="2"
+                    type="number"
+                    value=minutes
+                    min=0
+                    max=59
+                }}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  {{else}}
+    {{wu-datepicker
+        placeholder=placeholder
+        class="date-range__datepicker datepicker input-field--block"
+        value=(mut updatedDate)
+        dateFormat=dateFormat
+    }}
+  {{/if}}
+</div>
+
+<div class="modal-dialog__footer">
+  {{#wu-button-group}}
+    {{wu-button
+        label="Insert"
+        isNarrow=true
+        commandLocation="below"
+        disabled=isInvalidInput
+        onClick=(action "insert")
+    }}
+    {{!--       {{wu-button
+        label="Verwerp wijzigingen"
+        class="button--alt"
+        isNarrow=true
+        commandLocation="below"
+        onClick=null
+        }} --}}
+  {{/wu-button-group}}
+</div>
+
+{{yield}}
