@@ -54,3 +54,79 @@ em, i {
  .document-publish [property="besluit:heeftAgenda"] > ul:not(.bullet-list) li, .editor__paper [property="besluit:heeftAgenda"] > ul:not(.bullet-list) li, .document-print [property="besluit:heeftAgenda"] > ul:not(.bullet-list) li {
 	 list-style-type: none;
 }
+
+/* Clean up design */
+.button,
+.button:visited {
+  background-color: #9000FA;
+  border-radius: 3rem;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #8900ed;
+}
+
+
+/* Position save button in top right position */
+.button-top-right {
+  position: fixed !important;
+  z-index: 2;
+  top: .9rem;
+  right: .9rem;
+}
+
+.editor-container {
+  padding-top: 5.5rem;
+  background-color: #F3F5F6;
+}
+
+.toolbar {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.editor-loading-events {
+  padding: 2rem;
+  position: fixed;
+  width: 33.33333%;
+  right: 0;
+  top: 5.5rem;
+
+}
+
+.editor-loading-events .grid {
+  display: flex;
+  align-items: center;
+}
+
+.editor-loading-events .col--2-12 {
+  max-width: auto;
+  min-width: auto;
+  flex-basis: auto;
+  margin-right: 1rem;
+  color: #6D7783;
+  opacity: .6;
+}
+
+.editor-loading-events .col--10-12 {
+  max-width: auto;
+  min-width: auto;
+  flex-basis: auto;
+  color: #6D7783;
+
+}
+
+.editor {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+  .editor__paper {
+    width: 700px;
+  }

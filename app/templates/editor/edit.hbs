@@ -1,4 +1,4 @@
-<button class="ui button" {{action 'save'}}>Save</button>
+<button class="ui button button-top-right" {{action 'save'}}>Save</button>
 
 <div prefix="foaf: http://xmlns.com/foaf/0.1/" typeof="foaf:Document" resource="#">
   {{rdfa/rdfa-editor class="rdfa-editor" profile=profile value=model.content rdfaEditorInit=(action "handleRdfaEditorInit")}}
