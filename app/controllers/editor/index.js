@@ -8,6 +8,9 @@ export default class EditorIndexController extends Controller {
   }
 
   @action
+  /*
+   * Save a new document
+   */
   async saveNewDocument() {
     let newEditorDocument = this.store.createRecord('editor-document', {
       title: 'New document',

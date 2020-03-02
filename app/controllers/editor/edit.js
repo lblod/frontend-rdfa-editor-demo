@@ -8,6 +8,9 @@ export default class EditorEditController extends Controller {
   }
 
   @action
+  /*
+   * Save the document
+   */
   async save() {
     let editorDocument = this.model;
     editorDocument.set('modifiedOn', new Date());
