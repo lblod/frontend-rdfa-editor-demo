@@ -1,3 +1,7 @@
+html {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
 .toolbar__styling-tools + div {
   display: none;
 }
@@ -90,13 +94,13 @@ em, i {
   width: 100%;
 }
 
-.editor-loading-events {
+.editor-loading-events,
+.editor-hints {
   padding: 2rem;
   position: fixed;
   width: 33.33333%;
   right: 0;
   top: 5.5rem;
-
 }
 
 .editor-loading-events .grid {
@@ -130,3 +134,10 @@ em, i {
   .editor__paper {
     width: 700px;
   }
+
+
+/* Fix modal position */
+.annotation-suggestion__suggestion {
+  right: 2rem;
+  top: 2rem;
+}
