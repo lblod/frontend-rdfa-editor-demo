@@ -1,44 +1,46 @@
 <! -- OVERRIDING PLUGIN FOR ENGLISH TRANSLATION -->
-{{#if isDateTime }}
-  <div class="grid">
-    <form class="form col--12-12 col--1-1--s">
-      <div class="u-spacer--tiny">
-        Add <strong>{{info.plainValue}}</strong> as the time
-        <div class="double-input js-double-input">
-          <div class="double-input__inputs">
-            <div class="double-input__input" style="width:30%">
-              {{input class="input-field input-field--block" placeholder="12" type="number" value=hour min=0 max=23}} hour
-            </div>
-            <div class="double-input__input" style="width:30%">
-              {{input class="input-field input-field--block" placeholder="00" type="number" value=minutes min=0 max=59}} minutes
-            </div>
+<div class="modal-dialog__content">
+  {{#if isDateTime }}
+    <div class="grid">
+      <form class="form col--12-12 col--1-1--s">
+        <div class="u-spacer--tiny">
+          Add <strong>{{info.plainValue}}</strong> as the time
+          <div class="double-input js-double-input">
+            <div class="double-input__inputs">
+              <div class="double-input__input" style="width:30%">
+                {{input class="input-field input-field--block" placeholder="12" type="number" value=hour min=0 max=23}} hour
+              </div>
+              <div class="double-input__input" style="width:30%">
+                {{input class="input-field input-field--block" placeholder="00" type="number" value=minutes min=0 max=59}} minutes
+              </div>
+        </div>
       </div>
+      <strong>{{info.rdfaProperty.label}}</strong> in.
+        </div>
+      </form>
     </div>
-    <strong>{{info.rdfaProperty.label}}</strong> in.
-      </div>
-    </form>
-  </div>
-  {{#wu-button-group}}
-    {{wu-button
-      label="Insert"
-      size="small"
-      isNarrow=true
-      onClick=(action "insertDateTime" info hour minutes)
-    }}
-  {{/wu-button-group}}
+    {{#wu-button-group}}
+      {{wu-button
+        label="Insert"
+        size="small"
+        isNarrow=true
+        onClick=(action "insertDateTime" info hour minutes)
+      }}
+    {{/wu-button-group}}
 
-{{else}}
-  <div class="u-spacer--tiny">
-    Add <strong>{{info.plainValue}}</strong> as the <strong>{{info.rdfaProperty.label}}</strong>.
-  </div>
-  {{#wu-button-group}}
-    {{wu-button
-      label="Insert"
-      size="small"
-      isNarrow=true
-      onClick=(action "insert" info)
-    }}
-  {{/wu-button-group}}
+  {{else}}
+    <div class="u-spacer--tiny">
+      Add <strong>{{info.plainValue}}</strong> as the <strong>{{info.rdfaProperty.label}}</strong>.
+    </div>
+    {{#wu-button-group}}
+      {{wu-button
+        label="Insert"
+        size="small"
+        isNarrow=true
+        onClick=(action "insert" info)
+      }}
+    {{/wu-button-group}}
 
-{{/if}}
-{{yield}}
+  {{/if}}
+  {{yield}}
+</div>

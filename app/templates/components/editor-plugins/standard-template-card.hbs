@@ -1,0 +1,18 @@
+<div class="modal-dialog__header">
+  <p class="u-spacer--tiny">
+    Would you like to insert a template for a
+    <strong>{{info.label}}</strong>?
+  </p>
+</div>
+
+<div class="modal-dialog__footer">
+  {{#wu-button-group}}
+    {{wu-button
+      label="Insert"
+      size="small"
+      isNarrow=true
+      onClick=(action "insert")}}
+  {{/wu-button-group}}
+</div>
+
+{{yield}}
