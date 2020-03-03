@@ -141,3 +141,7 @@ em, i {
   right: 2rem;
   top: 2rem;
 }
+
+.modal-dialog.modal-dialog--sectioned .modal-dialog__content {
+  max-height: 80%;
+}
