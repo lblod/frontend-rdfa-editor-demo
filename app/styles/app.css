@@ -71,21 +71,24 @@ em, i {
   background-color: #8900ed;
 }
 
+a {
+  color: #666;
+}
 
 /* Position save button in top right position */
 .button-top-right {
   position: fixed !important;
   z-index: 2;
-  top: .9rem;
+  top: 6.9rem;
   right: .9rem;
 }
 
 .editor-container {
-  padding-top: 5.5rem;
+  padding-top: 11.5rem;
   background-color: #F3F5F6;
 }
 
-.toolbar {
+.app-chrome {
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -94,13 +97,27 @@ em, i {
   width: 100%;
 }
 
+.app-chrome--header {
+  padding: 1.5rem 2rem;
+  height: 6rem;
+  border-bottom: 1px solid #E8EBEE;
+}
+
+.app-chrome img {
+  height: 3rem;
+}
+
+.app-chrome--toolbar-container {
+  display: block;
+}
+
 .editor-loading-events,
 .editor-hints {
   padding: 2rem;
   position: fixed;
   width: 33.33333%;
   right: 0;
-  top: 5.5rem;
+  top: 11.5rem;
 }
 
 .editor-loading-events .grid {
@@ -139,7 +156,7 @@ em, i {
 /* Fix modal position */
 .annotation-suggestion__suggestion {
   right: 2rem;
-  top: 2rem;
+  top: 5rem;
 }
 
 .modal-dialog.modal-dialog--sectioned .modal-dialog__content {
