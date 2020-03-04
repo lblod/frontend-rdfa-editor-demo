@@ -161,7 +161,7 @@ a {
 
 .modal-dialog.modal-dialog--sectioned .modal-dialog__content {
   max-height: 60vh;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 /* Style modal content */
