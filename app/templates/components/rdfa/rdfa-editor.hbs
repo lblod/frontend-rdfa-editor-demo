@@ -1,7 +1,22 @@
 <! -- OVERRIDING PLUGIN FOR CONFUSING + BUTTON -->
-{{#if this.editor}}
-  <Rdfa::EditorToolbar @contentEditable={{editor}} />
-{{/if}}
+<div class="app-chrome">
+  <div class="app-chrome--header">
+    <div class="grid">
+      <div class="col--4-12">
+        <img src="https://dev.say-editor.com/assets/images/logos-say/say-logo-long-horizontal-color.svg" alt="Say editor, the text-editor that knows what you're talking about">
+      </div>
+      <div class="col--8-12 u-align-right">
+        <a href="https://dev.say-editor.com/docs" target="_blank" rel="noopener"><i class="fa fa-book"></i> Visit our docs (todo change link)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="app-chrome--toolbar-container">
+    {{#if this.editor}}
+      <Rdfa::EditorToolbar @contentEditable={{editor}} />
+    {{/if}}
+  </div> 
+</div>
 <div class="container-flex--contain editor-container">
   <div class="container-flex--scroll">
     <div class="grid grid--collapse grid--align-right">
