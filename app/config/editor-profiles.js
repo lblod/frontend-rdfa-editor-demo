@@ -6,18 +6,11 @@ export default {
   // * wikipedia-slug-plugin : when typing dbp:xxx, searches for xxx on dbpedia and insert the link when found [https://github.com/lblod/ember-rdfa-editor-wikipedia-slug-plugin]
   // * dbpedia-info-plugin : fetches info about a dbpedia link and displays them in a card [https://github.com/lblod/ember-rdfa-editor-dbpedia-info-plugin]
   default: [
-    "rdfa-editor-date-overwrite-plugin",
-    "rdfa-editor-date-plugin",
+    //"rdfa-editor-date-overwrite-plugin",
+    //"rdfa-editor-date-plugin",
     "rdfa-editor-standard-template-plugin",
-    "rdfa-editor-wikipedia-slug-plugin",
-    "rdfa-editor-dbpedia-info-plugin"
-  ],
-  all: [
-    "rdfa-editor-date-overwrite-plugin",
-    "rdfa-editor-date-plugin",
-    "rdfa-editor-standard-template-plugin",
-    "rdfa-editor-wikipedia-slug-plugin",
-    "rdfa-editor-dbpedia-info-plugin"
+    //"rdfa-editor-wikipedia-slug-plugin",
+    //"rdfa-editor-dbpedia-info-plugin"
   ],
   none: []
 };
