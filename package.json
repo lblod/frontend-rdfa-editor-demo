@@ -20,7 +20,7 @@
   "devDependencies": {
     "@ember/optional-features": "^1.1.0",
     "@glimmer/component": "^1.0.0",
-    "@lblod/ember-rdfa-editor": "^0.34.3",
+    "@lblod/ember-rdfa-editor": "git+https://github.com/lblod/ember-rdfa-editor#5119f00338dd4d176f3d3ff4bef9992928e2a548",
     "@lblod/ember-rdfa-editor-date-overwrite-plugin": "^0.3.1",
     "@lblod/ember-rdfa-editor-date-plugin": "^0.9.0",
     "@lblod/ember-rdfa-editor-plugin-system-dispatcher": "^0.5.9",
