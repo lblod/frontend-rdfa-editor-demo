@@ -8,6 +8,9 @@ html {
 em, i {
 	 font-style: italic;
 }
+strong {
+  font-weight: 900;
+}
  .document-publish ul.bullet-list, .editor__paper ul.bullet-list, .document-print ul.bullet-list {
 	 padding-left: 0;
 }
