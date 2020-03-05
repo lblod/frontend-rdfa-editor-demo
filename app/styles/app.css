@@ -13,6 +13,9 @@ strong {
 }
  .document-publish ul.bullet-list, .editor__paper ul.bullet-list, .document-print ul.bullet-list {
 	 padding-left: 0;
+ }
+[data-editor-highlight="true"] {
+	background-color: #FF0;
 }
  .document-publish ul ol:before, .editor__paper ul ol:before, .document-print ul ol:before, .document-publish ol ol:before, .editor__paper ol ol:before, .document-print ol ol:before, .document-publish ul ul:before, .editor__paper ul ul:before, .document-print ul ul:before, .document-publish ol ul:before, .editor__paper ol ul:before, .document-print ol ul:before {
 	 content: "";
