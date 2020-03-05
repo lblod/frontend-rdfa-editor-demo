@@ -1,0 +1,491 @@
+$primary-purple:        #9000FA;
+$primary-yellow:        #FEE539;
+
+$blue-gray-dark:        #79838F;
+$blue-gray:             #A5B3C2;
+$blue-gray-light:       #CBD2DA;
+$blue-gray-lightest:    #F3F5F6;
+
+
+html {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.toolbar__styling-tools + div {
+  display: none;
+}
+em, i {
+	 font-style: italic;
+}
+strong {
+  font-weight: 900;
+}
+ .document-publish ul.bullet-list, .editor__paper ul.bullet-list, .document-print ul.bullet-list {
+	 padding-left: 0;
+ }
+[data-editor-highlight="true"] {
+	background-color: #FF0;
+}
+ .document-publish ul ol:before, .editor__paper ul ol:before, .document-print ul ol:before, .document-publish ol ol:before, .editor__paper ol ol:before, .document-print ol ol:before, .document-publish ul ul:before, .editor__paper ul ul:before, .document-print ul ul:before, .document-publish ol ul:before, .editor__paper ol ul:before, .document-print ol ul:before {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 left: -2rem;
+	 top: 0.5rem;
+	 background-color: white;
+	 z-index: 1;
+}
+ .document-publish ol:not(.bullet-list):not(.numbered-list), .editor__paper ol:not(.bullet-list):not(.numbered-list), .document-print ol:not(.bullet-list):not(.numbered-list), .document-publish ul:not(.bullet-list):not(.numbered-list), .editor__paper ul:not(.bullet-list):not(.numbered-list), .document-print ul:not(.bullet-list):not(.numbered-list) {
+	 padding-left: 1.75em;
+}
+ .document-publish ol:not(.bullet-list):not(.numbered-list) > li, .editor__paper ol:not(.bullet-list):not(.numbered-list) > li, .document-print ol:not(.bullet-list):not(.numbered-list) > li, .document-publish ul:not(.bullet-list):not(.numbered-list) > li, .editor__paper ul:not(.bullet-list):not(.numbered-list) > li, .document-print ul:not(.bullet-list):not(.numbered-list) > li {
+	 list-style-type: initial;
+}
+ .document-publish ul:not(.bullet-list):not(.numbered-list) li > ul > li, .editor__paper ul:not(.bullet-list):not(.numbered-list) li > ul > li, .document-print ul:not(.bullet-list):not(.numbered-list) li > ul > li {
+	 list-style-type: circle;
+}
+ .document-publish ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li, .editor__paper ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li, .document-print ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li {
+	 list-style-type: square;
+}
+ .document-publish ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li, .editor__paper ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li, .document-print ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li {
+	 list-style-type: initial;
+}
+ .document-publish ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li, .editor__paper ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li, .document-print ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li {
+	 list-style-type: circle;
+}
+ .document-publish ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li, .editor__paper ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li, .document-print ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li {
+	 list-style-type: square;
+}
+ .document-publish ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li, .editor__paper ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li, .document-print ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li {
+	 list-style-type: initial;
+}
+ .document-publish ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li, .editor__paper ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li, .document-print ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li {
+	 list-style-type: circle;
+}
+ .document-publish ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li, .editor__paper ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li, .document-print ul:not(.bullet-list):not(.numbered-list) li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li {
+	 list-style-type: square;
+}
+ .document-publish ol:not(.bullet-list):not(.numbered-list) > li, .editor__paper ol:not(.bullet-list):not(.numbered-list) > li, .document-print ol:not(.bullet-list):not(.numbered-list) > li {
+	 list-style-type: decimal;
+}
+ .document-publish [property="besluit:heeftAgenda"] > ul:not(.bullet-list) li, .editor__paper [property="besluit:heeftAgenda"] > ul:not(.bullet-list) li, .document-print [property="besluit:heeftAgenda"] > ul:not(.bullet-list) li {
+	 list-style-type: none;
+}
+
+/* Clean up design */
+.button,
+.button:visited {
+  background-color: #9000FA;
+  border-radius: 3rem;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #8900ed;
+}
+
+a {
+  color: #666;
+}
+
+/* Position save button in top right position */
+.button-top-right {
+  position: fixed !important;
+  z-index: 2;
+  top: 6.9rem;
+  right: .9rem;
+}
+
+.editor-container {
+  padding-top: 11.5rem;
+  background-color: #F3F5F6;
+}
+
+.app-chrome {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.app-chrome--header {
+  padding: 1.5rem 2rem;
+  height: 6rem;
+  border-bottom: 1px solid #E8EBEE;
+}
+
+.app-chrome img {
+  height: 3rem;
+}
+
+.app-chrome--toolbar-container {
+  display: block;
+}
+
+.editor-loading-events,
+.editor-hints {
+  padding: 2rem;
+  position: fixed;
+  width: 33.33333%;
+  right: 0;
+  top: 11.5rem;
+}
+
+.editor-loading-events .grid {
+  display: flex;
+  align-items: center;
+}
+
+.editor-loading-events .col--2-12 {
+  max-width: auto;
+  min-width: auto;
+  flex-basis: auto;
+  margin-right: 1rem;
+  color: #6D7783;
+  opacity: .6;
+}
+
+.editor-loading-events .col--10-12 {
+  max-width: auto;
+  min-width: auto;
+  flex-basis: auto;
+  color: #6D7783;
+
+}
+
+.editor {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+  .editor__paper {
+    width: 700px;
+  }
+
+
+/* Fix modal position */
+.annotation-suggestion__suggestion {
+  right: 2rem;
+  top: 5rem;
+}
+
+.modal-dialog.modal-dialog--sectioned .modal-dialog__content {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Style modal content */
+.wiki-content h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.wiki-content img {
+  width: 100%;
+  margin-bottom: .5rem;
+  border: 2px solid #E8EBEE;
+}
+
+.wiki-content p + p {
+  width: 100%;
+}
+
+
+
+/* showing off knowledge */
+
+[property="ext:behandelt"] [data-editor-highlight="true"] {
+  background-color: rgba($primary-yellow, 0.9);
+
+  &:before {
+    content: "Click me!";
+  }
+}
+
+
+
+/* ==========================================================================
+  Shared styling (hover, click, show, regular)
+ ========================================================================== */
+
+/* styling the annotations */
+
+.rdfa-editor .editor {
+
+  span { // making sure elements are easier to style and handle
+    display: inline-block;
+  }
+
+  [property="prov:value"] > div > span,
+  [property="ext:behandelt"] > div > span {
+    display: block; // remove when span is gone from the template "nieuw generiek besluit"
+  }
+}
+
+[data-editor-highlight="true"],
+[property],
+[typeof]:not([typeof="foaf:Document"]),
+[data-type],
+.mark-highlight-manual
+{
+  border-bottom: 1px solid rgba($blue-gray-light, 0.8);
+  padding-bottom: 5px;
+
+  &:not([data-flagged-remove="complete"]):before { // invisible styling of annotations, before they are shown
+    /* positioning */
+    content:  attr(property) " " attr(typeof) " " attr(data-type);
+    top: -999px;
+    opacity: 0;
+    position: absolute;
+    left: auto;
+    width: 22rem;
+    pointer-events: none;
+    transition: opacity 200ms;
+    z-index: 901;
+
+    /* text */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: $blue-gray-dark;
+    line-height: 1;
+    font-family: "flanders-sans", sans-serif;
+
+    display: block;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0.5rem;
+  }
+
+  [typeof],
+  [property],
+  [data-type] {
+    padding-bottom: 3px;
+  }
+
+  [typeof] [data-type],
+  [property] [data-type],
+  [typeof] [typeof],
+  [property] [property] {
+    padding-bottom: 2px;
+  }
+}
+
+
+/* making it easy to discover elements that need to be filled out / take action upon */
+
+[property^="ext:insert"],
+[data-editor-highlight="true"] {
+  background-color: rgba($primary-yellow, 0.9);
+
+  &::selection {
+    background-color: darken($primary-yellow, 20%);
+  }
+
+  &:hover {
+    color: #000;
+    background-color: $primary-yellow;
+  }
+}
+
+/* hide superfluous annotations */
+
+[property=""],
+[typeof=""],
+[property="ext:metadata"],
+[property="http://mu.semte.ch/vocabularies/ext/noHighlight"],
+[property="http://mu.semte.ch/vocabularies/ext/noHighlight"] {
+  border-bottom: 0;
+
+  &:after,
+  &:before {
+    content: normal !important;
+  }
+}
+
+/* ==========================================================================
+//   Annotations styles on hover
+//  ========================================================================== */
+
+.editor__paper {
+  position: relative;
+
+  [data-editor-highlight="true"]:before {
+    content: "Action!" !important;
+  }
+
+  [property="http://purl.org/dc/terms/created"]:before,
+  [property="dct:created"]:before {
+    content: "Date: " attr(content) "\A \A" attr(property) "\A" attr(datatype) !important;
+  }
+
+  [property="rdf:seeAlso"]:before {
+    content: "Link to: " attr(href) "\A \A" attr(property) !important;    
+  }
+
+  [typeof],
+  [property],
+  [data-type],
+  [data-editor-highlight="true"] {
+
+    &:before,
+    &:after,
+    &:hover:before,
+    &:hover:after {
+      transition: padding 400ms, opacity 400ms, left 200ms;
+    }
+
+    /* showing annotations text */
+
+    &[data-editor-position-level]:before {
+      z-index: 1;
+    }
+
+    &:not([data-editor-position-level]):hover:before {
+      background-color: rgba($blue-gray-lightest, 0.9);
+      color: darken($blue-gray, 5%);
+      opacity: 1;
+      z-index: 100 !important;
+      padding-right: 0.5rem;
+      right: -29.5rem;
+    }
+
+    &[data-editor-position-level]:before,
+    &:hover:before {
+      top: 0;
+      opacity: 1;
+
+      width: 15rem;
+      height: 2.5rem;
+
+      text-align: right;
+      right: auto;
+      left: -23.5rem;
+
+      display: block;
+      white-space: pre-wrap;
+    }
+
+    /* style for lines that accompany annotations */
+
+    &:not([data-editor-position-level]):hover:after {
+      left: -8.5rem;
+    }
+
+    &[data-editor-position-level]:after,
+    &:hover:after {
+      position: absolute;
+      content: "";
+      display: block;
+      height: 100%;
+      left: -7.5rem;
+      right: auto;
+      width: 5rem;
+      border-right: 1px solid $blue-gray;
+      border-top: 1px solid $blue-gray;
+    }
+
+    &:not([data-editor-position-level]):hover:after {
+      border-right: 0;
+    }
+
+    &[data-editor-position-level="0"]:after {
+      border-right: 0;
+    }
+
+    /* positioning of annotations (pseudo class elements) */
+
+
+
+    [typeof],
+    [property],
+    [data-type],
+    [data-editor-highlight="true"] {
+      &[data-editor-position-level]:before,
+      &:hover:before {
+        top: 12rem;
+      }
+
+      &[data-editor-position-level]:after {
+        top: 12.5rem;
+        height: calc(100% - 12rem);
+      }
+    }
+
+    [data-editor-highlight="true"],
+    [property],
+    [typeof] {
+      [data-editor-highlight="true"],
+      [data-type],
+      [typeof],
+      [property] {
+        &:before,
+        &:after {
+          top: 4rem;
+        }
+
+        &:after {
+          min-height: 5rem;
+          height: calc(100% - 4rem);
+        }
+      }
+    }
+
+    [property] [data-editor-highlight="true"],
+    [typeof] [data-editor-highlight="true"],
+    [property] [property],
+    [typeof] [typeof] {
+      [data-editor-highlight="true"],
+      [data-type],
+      [typeof],
+      [property] {
+        &:before,
+        &:after {
+          top: 12rem;
+        }
+
+        &:after {
+          min-height: 5rem;
+          height: calc(100% - 8rem);
+        }
+      }
+    }
+  }
+}
+
+/* making sure list items annotations look good too */
+
+.rdfa-annotations:not(.show-rdfa-blocks) {
+  ul:not(.article-list) {
+
+    [typeof],
+    [property],
+    [data-type],
+    [data-editor-highlight="true"] {
+
+      &:not([data-editor-position-level]):hover:before {
+        left: -26.5rem;
+      }
+
+      &:not([data-editor-position-level]):hover:after {
+        left: -10.5rem;
+      }
+
+      &[data-editor-position-level]:before {
+        left: -25.5rem;
+      }
+
+      &[data-editor-position-level]:after {
+        left: -9.5rem;
+      }
+    }
+  }
+}
