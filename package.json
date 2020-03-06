@@ -26,7 +26,7 @@
     "@lblod/ember-rdfa-editor-plugin-system-dispatcher": "^0.5.9",
     "@lblod/ember-rdfa-editor-standard-template-plugin": "^0.7.3",
     "@lblod/ember-rdfa-editor-wikipedia-slug-plugin": "0.0.4",
-    "@lblod/ember-rdfa-editor-dbpedia-info-plugin": "0.0.3",
+    "@lblod/ember-rdfa-editor-dbpedia-info-plugin": "0.0.4",
     "@lblod/ember-vo-webuniversum": "^0.22.7",
     "babel-eslint": "^10.0.3",
     "broccoli-asset-rev": "^3.0.0",
