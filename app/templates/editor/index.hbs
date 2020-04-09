@@ -1,7 +1,22 @@
-<button class="ui button button-top-right" {{action 'saveNewDocument'}}>Save</button>
+<button class="ui button button-top-right" {{on "click" this.saveNewDocument}}>Save</button>
 
 <div prefix="foaf: http://xmlns.com/foaf/0.1/" typeof="foaf:Document" resource="#">
-  {{rdfa/rdfa-editor class="rdfa-editor" profile=profile value=editorDocument.content rdfaEditorInit=(action "handleRdfaEditorInit")}}
+  <Rdfa::RdfaEditor
+    class="rdfa-editor"
+    @profile={{profile}}
+    @value={{editorDocument.content}}
+    @rdfaEditorInit={{action "handleRdfaEditorInit"}}
+    @editorOptions={{hash
+                       showToggleRdfaAnnotations="true"
+                       showInsertButton=null
+                       showRdfa="true"
+                       showRdfaHighlight="true"
+                       showRdfaHover="true"}}
+    @toolbarOptions={{hash
+                        showTextStyleButtons="true"
+                        showListButtons="true"
+                        showIndentButtons="true"}}
+  />
 </div>
 
 {{outlet}}
