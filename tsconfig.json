@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": false,
+    "noEmit": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "baseUrl": ".",
+    "module": "es6",
+    "experimentalDecorators": true,
+    "paths": {
+      "frontend-rdfa-editor-demo/tests/*": [
+        "tests/*"
+      ],
+      "frontend-rdfa-editor-demo/*": [
+        "app/*",
+        "lib/rdfa-editor-external-image-plugin/app/*"
+      ],
+      "rdfa-editor-external-image-plugin": [
+        "lib/rdfa-editor-external-image-plugin/addon"
+      ],
+      "rdfa-editor-external-image-plugin/*": [
+        "lib/rdfa-editor-external-image-plugin/addon/*"
+      ],
+      "rdfa-editor-external-image-plugin/test-support": [
+        "lib/rdfa-editor-external-image-plugin/addon-test-support"
+      ],
+      "rdfa-editor-external-image-plugin/test-support/*": [
+        "lib/rdfa-editor-external-image-plugin/addon-test-support/*"
+      ],
+      "*": [
+        "types/*"
+      ]
+    }
+  },
+  "include": [
+    "app/**/*",
+    "tests/**/*",
+    "types/**/*",
+    "lib/rdfa-editor-external-image-plugin/**/*"
+  ]
+}

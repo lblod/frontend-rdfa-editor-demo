@@ -1,0 +1,13 @@
+<div class="modal-dialog__content">
+  <p class="u-spacer--tiny">
+    Insert link to image?
+    <br>
+    <strong>Do you want to insert this image?</strong>
+  </p>
+  <p><img src={{@info.url}} alt={{@info.label}} /></p>
+</div>
+<div class="modal-dialog__footer">
+  <WuButtonGroup>
+    <WuButton @label="Yes" @size="small" @isNarrow={{true}} @commandLocation="below" @onClick={{this.insert}} />
+  </WuButtonGroup>
+</div>

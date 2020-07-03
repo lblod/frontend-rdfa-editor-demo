@@ -1,21 +1,36 @@
 <button class="ui button button-top-right" {{on "click" this.save}}>Save</button>
 
-<div prefix="foaf: http://xmlns.com/foaf/0.1/ dct: http://purl.org/dc/terms/" typeof="foaf:Document" resource="#">
-  <Rdfa::RdfaEditor class="rdfa-editor"
-    @profile={{profile}}
-    @value={{model.content}}
-    @rdfaEditorInit={{action "handleRdfaEditorInit"}}
-    @editorOptions={{hash
-                       showToggleRdfaAnnotations="true"
-                       showInsertButton=null
-                       showRdfa="true"
-                       showRdfaHighlight="true"
-                       showRdfaHover="true"}}
-    @toolbarOptions={{hash
-                       showTextStyleButtons="true"
-                       showListButtons="true"
-                       showIndentButtons="true"}}
-  />
+<button class="ui button" {{on "click" (fn (mut this.showTriples) (not this.showTriples))}}>Toggle show</button>
+  {{#if this.showTriples}}
+    Found triples:
+
+    <table>
+      <tr>
+        <th>Subject</th><th>Predicate</th><th>Object</th>
+      </tr>
+      {{#each this.triplesWatch.triples as |triple|}}
+        <tr>
+          <th>{{triple.s}}</th><th>{{triple.p}}</th><th>{{triple.o}}</th>
+        </tr>
+      {{/each}}
+    </table>
+  {{/if}}
+  <div prefix="foaf: http://xmlns.com/foaf/0.1/ dct: http://purl.org/dc/terms/" typeof="foaf:Document" resource="#">
+    <Rdfa::RdfaEditor class="rdfa-editor"
+      @profile={{profile}}
+      @value={{model.content}}
+      @rdfaEditorInit={{action "handleRdfaEditorInit"}}
+      @editorOptions={{hash
+                         showToggleRdfaAnnotations="true"
+                         showInsertButton=null
+                         showRdfa="true"
+                         showRdfaHighlight="true"
+                         showRdfaHover="true"}}
+      @toolbarOptions={{hash
+                          showTextStyleButtons="true"
+                          showListButtons="true"
+                          showIndentButtons="true"}}
+    />
 </div>
 
 {{outlet}}

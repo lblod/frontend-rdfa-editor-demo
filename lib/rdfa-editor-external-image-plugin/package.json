@@ -1,0 +1,11 @@
+{
+  "name": "rdfa-editor-external-image-plugin",
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "babel-plugin-htmlbars-inline-precompile": "*",
+    "ember-cli-babel": "*",
+    "ember-cli-htmlbars": "*"
+  }
+}

@@ -1,7 +1,14 @@
+import { inject as service } from '@ember/service';
+import { tracked } from '@glimmer/tracking';
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
 
 export default class EditorEditController extends Controller {
+  @tracked
+  showTriples = false;
+
+  @service( "rdfa/triples-watch" ) triplesWatch;
+
   /**
    * Callback for editor initialization.  Supplies us with an editor
    * interface for the document's contents.
@@ -9,6 +16,7 @@ export default class EditorEditController extends Controller {
   @action
   handleRdfaEditorInit(editor) {
     this.set('editor', editor);
+    this.triplesWatch.startWatching( document.getElementsByClassName("say-editor__paper")[0] );
   }
 
   /**
